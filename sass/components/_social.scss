@@ -1,0 +1,59 @@
+.social__list {
+  @include flexbox(flex, center);
+
+  height: 44px;
+}
+
+.social__icon {
+  @include flexbox(flex, center, center);
+
+  width: 44px;
+  height: 44px;
+  color: $icon-grey;
+  background-color: $white-color;
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
+
+.social__icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__social__icon {
+  @include flexbox(flex, center, center);
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer__social__icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: $white-color;
+}

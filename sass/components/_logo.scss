@@ -1,0 +1,17 @@
+.logo {
+  color: $title-text-color;
+
+  font-family: Raleway;
+  @include font(26px, 1.2, 700);
+
+  text-decoration: none;
+}
+.logo--accent {
+  color: $accent-color;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $white-color;
+}

@@ -1,0 +1,73 @@
+.footer-block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $secondary-background;
+}
+
+.address {
+  color: $white-color;
+
+  @include font(14px, 1.7);
+
+  font-style: normal;
+}
+.address__text {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.footer__contact-list {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__link {
+  display: inline-block;
+  color: $footer-link-color;
+  font-weight: 400;
+}
+
+.footer__container {
+  @include flexbox(flex, $ai: baseline);
+}
+
+.footer__contacts {
+  margin-right: 70px;
+}
+
+.join {
+  margin-right: 93px;
+}
+
+.join__text {
+  @include font(14px, 1.14, 700);
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 20px;
+}
+
+.subscribe__form {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe__input {
+  width: 358px;
+  margin: 0;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $secondary-background;
+  border-radius: 4px;
+
+  &::placeholder {
+    @include font(16px, 1.25);
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

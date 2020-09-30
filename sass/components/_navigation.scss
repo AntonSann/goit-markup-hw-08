@@ -1,0 +1,69 @@
+.navigation {
+  @include flexbox(flex, $ai: center);
+}
+
+.navigation__list {
+  margin-left: 93px;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation__mail {
+  color: $primary-text-color;
+
+  @include flexbox(inline-flex, $ai: center);
+}
+
+.navigation__mail--envelope {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation__phone {
+  color: $primary-text-color;
+  @include flexbox(inline-flex, $ai: center);
+}
+
+.navigation__phone--smartphone {
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation__link--current {
+  position: relative;
+  color: $accent-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0px;
+    left: 0px;
+
+    background: $accent-color;
+    border-radius: 2px;
+  }
+}
+
+.navigation__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
