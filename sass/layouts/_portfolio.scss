@@ -4,7 +4,8 @@
 }
 
 .portfolio__nav-list {
-  @include flexbox(flex, center);
+  @include flexbox(center);
+  display: flex;
   margin-bottom: 50px;
 }
 

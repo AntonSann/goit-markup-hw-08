@@ -1,5 +1,13 @@
 .navigation {
-  @include flexbox(flex, $ai: center);
+  @include flexbox($ai: center);
+  display: flex;
+  @include for-size(mobile-only) {
+    display: none;
+  }
+
+  @include for-size(mobile) {
+    display: none;
+  }
 }
 
 .navigation__list {
@@ -15,7 +23,8 @@
 .navigation__mail {
   color: $primary-text-color;
 
-  @include flexbox(inline-flex, $ai: center);
+  @include flexbox($ai: center);
+  display: inline-flex;
 }
 
 .navigation__mail--envelope {
@@ -30,7 +39,8 @@
 
 .navigation__phone {
   color: $primary-text-color;
-  @include flexbox(inline-flex, $ai: center);
+  @include flexbox($ai: center);
+  display: inline-flex;
 }
 
 .navigation__phone--smartphone {

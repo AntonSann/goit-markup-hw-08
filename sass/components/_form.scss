@@ -70,8 +70,8 @@
 }
 
 .form__agreement-label {
-  @include flexbox(flex, $ai: center);
-
+  @include flexbox($ai: center);
+  display: flex;
   @include font(14px, 1.71);
 }
 

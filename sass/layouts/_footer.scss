@@ -30,9 +30,10 @@
   font-weight: 400;
 }
 
-.footer__container {
-  @include flexbox(flex, $ai: baseline);
-}
+/* .footer__container {
+  @include flexbox($ai: baseline);
+  display: flex;
+} */
 
 .footer__contacts {
   margin-right: 70px;

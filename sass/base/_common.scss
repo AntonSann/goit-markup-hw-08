@@ -2,6 +2,7 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 h1,
@@ -52,6 +53,8 @@ img {
   }
 }
 
-.list__center {
-  @include flexbox(flex, center);
+/* .list__center {
+  display: flex;
+  @include flexbox(center);
 }
+ */

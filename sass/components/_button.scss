@@ -14,8 +14,8 @@
 }
 
 .hero__button {
-  @include flexbox(flex, $ai: center);
-
+  @include flexbox($ai: center);
+  display: flex;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
@@ -47,8 +47,8 @@
 }
 
 .subscribe__button {
-  @include flexbox(flex, $ai: center);
-
+  @include flexbox($ai: center);
+  display: flex;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 28px;
@@ -78,8 +78,8 @@
 
 .button__close {
   position: absolute;
-  @include flexbox(flex, center, center);
-
+  @include flexbox(center, center);
+  display: flex;
   right: 8px;
   top: 8px;
   color: #000000;
