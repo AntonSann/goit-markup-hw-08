@@ -12,12 +12,7 @@
 
   text-align: center;
 
-  @include for-size(mobile) {
-    @include font(28px, 1.18, 700);
-  }
-  @include for-size(tablet) {
-    @include font(28px, 1.18, 700);
-  }
+  @include font(28px, 1.18, 700);
   @include for-size(desktop) {
     @include font(36px, 1.7, 700);
   }
