@@ -21,11 +21,11 @@
 
   background-color: $white-color;
 
-  &:last-child {
-    margin-right: 0;
-  }
-
   @include for-size(mobile) {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   @include for-size(tablet) {
     margin-right: 30px;

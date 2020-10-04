@@ -1,4 +1,5 @@
 .footer-block {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $secondary-background;
@@ -45,6 +46,7 @@
 
 .footer__contacts {
   @include for-size(mobile) {
+    margin-bottom: 60px;
   }
   @include for-size(tablet) {
     margin-right: 70px;
@@ -56,6 +58,7 @@
 
 .join {
   @include for-size(mobile) {
+    margin-bottom: 60px;
   }
   @include for-size(tablet) {
     margin-right: 93px;
@@ -87,7 +90,7 @@
 
 .subscribe__input {
   margin: 0;
-
+  margin-bottom: 20px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

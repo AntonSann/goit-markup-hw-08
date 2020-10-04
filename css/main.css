@@ -385,7 +385,7 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 h1,
@@ -575,6 +575,24 @@ img {
   text-align: left;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 480px) {
+  .subscribe__button {
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .subscribe__button {
+    margin: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .subscribe__button {
+    margin: 0;
+  }
 }
 
 .subscribe__button:hover, .subscribe__button:focus {
@@ -1218,8 +1236,13 @@ img {
   background-color: #ffffff;
 }
 
-.team__item:last-child {
-  margin-right: 0;
+@media (min-width: 480px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
+  .team__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1667,6 +1690,7 @@ img {
 }
 
 .footer-block {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
@@ -1728,6 +1752,12 @@ img {
   }
 }
 
+@media (min-width: 480px) {
+  .footer__contacts {
+    margin-bottom: 60px;
+  }
+}
+
 @media (min-width: 768px) {
   .footer__contacts {
     margin-right: 70px;
@@ -1737,6 +1767,12 @@ img {
 @media (min-width: 1280px) {
   .footer__contacts {
     margin-right: 70px;
+  }
+}
+
+@media (min-width: 480px) {
+  .join {
+    margin-bottom: 60px;
   }
 }
 
@@ -1788,6 +1824,7 @@ img {
 
 .subscribe__input {
   margin: 0;
+  margin-bottom: 20px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
