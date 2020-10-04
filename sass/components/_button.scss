@@ -59,12 +59,7 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  @include for-size(mobile) {
-    margin: auto;
-  }
-  @include for-size(tablet) {
-    margin: auto;
-  }
+  margin: auto;
   @include for-size(desktop) {
     margin: 0;
   }
