@@ -1717,27 +1717,25 @@ img {
   }
 }
 
-@media (min-width: 480px) {
-  .footer__contacts {
-    margin-bottom: 60px;
-  }
+.footer__contacts {
+  margin-bottom: 60px;
 }
 
 @media (min-width: 1280px) {
   .footer__contacts {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
-@media (min-width: 480px) {
-  .join {
-    margin-bottom: 60px;
-  }
+.join {
+  margin-bottom: 60px;
 }
 
 @media (min-width: 1280px) {
   .join {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -1773,6 +1771,8 @@ img {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   border-radius: 4px;
+  width: 100%;
+  max-width: 450px;
 }
 
 .subscribe__input::-webkit-input-placeholder {
@@ -1805,18 +1805,6 @@ img {
   font-weight: 400;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-@media (min-width: 480px) {
-  .subscribe__input {
-    width: 450px;
-  }
-}
-
-@media (min-width: 768px) {
-  .subscribe__input {
-    width: 450px;
-  }
 }
 
 @media (min-width: 1280px) {
