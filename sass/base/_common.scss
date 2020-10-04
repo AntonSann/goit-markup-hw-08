@@ -54,8 +54,13 @@ img {
 }
 
 .list__center {
-  /*   @include flexbox(center);
-  display: flex; */
   @include for-size(mobile) {
+  }
+  /*   @include for-size(tablet) {@include flexbox(center);
+  display: flex;
+  } */
+  @include for-size(desktop) {
+    @include flexbox(center);
+    display: flex;
   }
 }
