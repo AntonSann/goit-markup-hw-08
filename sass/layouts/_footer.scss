@@ -35,8 +35,9 @@
   @include for-size(mobile) {
   }
   @include for-size(tablet) {
-    @include flexbox($ai: baseline);
+    @include flexbox(space-around, baseline);
     display: flex;
+    flex-wrap: wrap;
   }
   @include for-size(desktop) {
     @include flexbox($ai: baseline);
@@ -49,7 +50,6 @@
     margin-bottom: 60px;
   }
   @include for-size(tablet) {
-    margin-right: 70px;
   }
   @include for-size(desktop) {
     margin-right: 70px;
@@ -61,7 +61,6 @@
     margin-bottom: 60px;
   }
   @include for-size(tablet) {
-    margin-right: 93px;
   }
   @include for-size(desktop) {
     margin-right: 93px;
@@ -79,8 +78,6 @@
   @include for-size(mobile) {
   }
   @include for-size(tablet) {
-    display: flex;
-    flex-direction: row;
   }
   @include for-size(desktop) {
     display: flex;

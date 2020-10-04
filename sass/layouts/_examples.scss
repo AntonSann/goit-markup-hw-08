@@ -1,5 +1,7 @@
 .examples {
-  display: none;
+  @include for-size(tablet-only) {
+    display: none;
+  }
 }
 
 .examples__item {
