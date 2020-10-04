@@ -53,8 +53,9 @@ img {
   }
 }
 
-/* .list__center {
-  display: flex;
-  @include flexbox(center);
+.list__center {
+  /*   @include flexbox(center);
+  display: flex; */
+  @include for-size(mobile) {
+  }
 }
- */

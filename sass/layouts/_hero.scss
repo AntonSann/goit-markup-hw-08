@@ -24,9 +24,20 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
   color: $white-color;
-  @include font(44px, 1.36, 900, 0.06em);
+
+  @include for-size(mobile) {
+    @include font(26px, 1.62, 900, 0.06em);
+    width: 360px;
+  }
+  @include for-size(tablet) {
+    @include font(26px, 1.62, 900, 0.06em);
+    width: 360px;
+  }
+  @include for-size(desktop) {
+    @include font(44px, 1.36, 900, 0.06em);
+    width: 696px;
+  }
 
   text-transform: uppercase;
 }

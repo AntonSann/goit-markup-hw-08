@@ -16,6 +16,7 @@
 .hero__button {
   @include flexbox($ai: center);
   display: flex;
+
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;

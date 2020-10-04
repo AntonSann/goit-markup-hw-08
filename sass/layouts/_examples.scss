@@ -1,11 +1,5 @@
 .examples {
-  @include for-size(mobile-only) {
-    display: none;
-  }
-
-  @include for-size(mobile) {
-    display: none;
-  }
+  display: none;
 }
 
 .examples__item {

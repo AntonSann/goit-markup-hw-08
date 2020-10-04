@@ -1,6 +1,10 @@
 .navigation {
   @include flexbox($ai: center);
   display: flex;
+}
+
+.navigation__list {
+  margin-left: 93px;
   @include for-size(mobile-only) {
     display: none;
   }
@@ -8,10 +12,6 @@
   @include for-size(mobile) {
     display: none;
   }
-}
-
-.navigation__list {
-  margin-left: 93px;
 }
 
 .navigation__link {
