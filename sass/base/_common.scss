@@ -35,9 +35,15 @@ img {
 .page {
   color: $primary-text-color;
   background-color: $white-color;
-  padding-top: 80px;
+  padding-top: 60px;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  @include for-size(tablet) {
+    min-height: 80px;
+  }
+  @include for-size(desktop) {
+    min-height: 80px;
+  }
 }
 
 .link {

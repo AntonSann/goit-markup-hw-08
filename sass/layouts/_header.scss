@@ -1,15 +1,27 @@
 .header {
   position: fixed;
   width: 100%;
-  min-height: 80px;
+  min-height: 60px;
   top: 0;
   left: 0;
   z-index: 1;
 
   background-color: $white-color;
   border-bottom: 1px solid #ececec;
+
+  @include for-size(tablet) {
+    min-height: 80px;
+  }
+  @include for-size(desktop) {
+    min-height: 80px;
+  }
 }
 .container__header {
-  @include flexbox(space-between);
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include flexbox($ai: center);
+  @include for-size(tablet) {
+    padding: 0;
+  }
 }
