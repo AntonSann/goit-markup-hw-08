@@ -93,6 +93,9 @@
   }
   width: 100%;
   max-width: 450px;
+  @include for-size(tablet) {
+    min-width: 450px;
+  }
 
   @include for-size(desktop) {
     width: 358px;
