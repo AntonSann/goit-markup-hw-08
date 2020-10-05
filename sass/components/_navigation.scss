@@ -15,11 +15,22 @@
 }
 
 .navigation__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include font(18px, 1.16, 500, 0.02em);
+
+  @include for-size(tablet) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include font(14px, 1.14, 500, 0.02em);
+  }
 }
 .navigation__links {
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   @include for-size(tablet) {
     margin-left: 84px;
     margin-right: 84px;
@@ -30,15 +41,25 @@
   }
 }
 .navigation__contacts {
-  flex-wrap: wrap;
-  display: flex;
-  @include flexbox($ai: center);
+  @include for-size(tablet) {
+    flex-wrap: wrap;
+    display: flex;
+    @include flexbox($ai: center);
+  }
+
   @include for-size(desktop) {
     flex-wrap: nowrap;
   }
 }
 
 .navigation__item--contacts {
+  @media (max-width: 767px) {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   @include for-size(tablet-only) {
     margin-bottom: 10px;
   }
@@ -55,9 +76,12 @@
   color: $primary-text-color;
   display: inline-flex;
   @include flexbox($ai: center);
-
-  @include for-size(tablet-only) {
+  @include font(18px, 1.16, 500, 0.02em);
+  @include for-size(tablet) {
     @include font(12px, 1.16, 500, 0.02em);
+  }
+  @include for-size(desktop) {
+    @include font(14px, 1.14, 500, 0.02em);
   }
 }
 
@@ -75,9 +99,12 @@
   white-space: nowrap;
   display: inline-flex;
   @include flexbox($ai: center);
-
-  @include for-size(tablet-only) {
+  @include font(18px, 1.16, 500, 0.02em);
+  @include for-size(tablet) {
     @include font(12px, 1.16, 500, 0.02em);
+  }
+  @include for-size(desktop) {
+    @include font(14px, 1.14, 500, 0.02em);
   }
 }
 
@@ -94,7 +121,9 @@
 .navigation__link--current {
   position: relative;
   color: $accent-color;
-
+  @media (max-width: 767px) {
+    padding-bottom: 8px;
+  }
   &::after {
     position: absolute;
     content: "";
@@ -109,13 +138,25 @@
 }
 
 .navigation__list {
+  @include for-size(tablet) {
+    display: flex;
+    @include flexbox(space-between, center);
+  }
 }
 
 .navigation__item {
-  margin-right: 50px;
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include for-size(tablet) {
+    margin-right: 50px;
 
-  &:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
