@@ -1808,7 +1808,7 @@ img {
 
 @media (min-width: 1280px) {
   .subscribe__input {
-    width: 358px;
+    min-width: 358px;
     margin-right: 12px;
   }
 }
