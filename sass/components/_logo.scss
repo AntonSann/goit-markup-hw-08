@@ -3,9 +3,13 @@
   color: $title-text-color;
 
   font-family: Raleway;
-  @include font(26px, 1.2, 700);
+  @include font(24px, 1.17, 700);
 
   text-decoration: none;
+
+  @include for-size(desktop) {
+    @include font(26px, 1.2, 700);
+  }
 }
 .logo--accent {
   color: $accent-color;
