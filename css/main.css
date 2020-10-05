@@ -690,9 +690,6 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  /*   position: absolute;
-  top: 10px;
-  right: 15px; */
   margin: 0;
   padding: 0;
   border: 0;
@@ -1922,16 +1919,23 @@ img {
 }
 
 .portfolio__nav-list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .portfolio__nav-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
 }
 
 .portfolio__but-item {
@@ -1942,27 +1946,56 @@ img {
   margin-right: 0;
 }
 
-.portfolio__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media (max-width: 767px) {
+  .portfolio__but-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio__item:nth-child(3n) {
-  margin-right: 0;
+.portfolio__item:last-child {
   margin-bottom: 30px;
 }
 
-.portfolio__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media (min-width: 768px) {
+  .portfolio__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  .portfolio__item:nth-child(2n) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .portfolio__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .portfolio__item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+  .portfolio__item:nth-child(3n) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .portfolio__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio__item:hover {
