@@ -9,51 +9,76 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="container container__header">
+      <div class="container__header container">
         <nav class="navigation">
-          <a href="./index.html" class="logo"
-            ><span class="logo--accent">Web</span>Studio</a
+          <a href="./index.html" class="logo">
+            <span class="logo--accent">Web</span>
+            Studio</a
           >
-          <ul class="navigation navigation__list list">
-            <li class="navigation navigation__item">
-              <a href="./index.html" class="navigation__link link">Студия</a>
-            </li>
-            <li class="navigation navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link link navigation__link--current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation navigation__item">
-              <a href="#contacts" class="navigation__link link">Контакты</a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="navigation__button"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              class="navigation__button--svg"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./img/burger.svg#close_burger"
+              ></use>
+              <use class="icon-menu" href="./img/burger.svg#menu_burger"></use>
+            </svg>
+          </button>
+          <div class="navigation__container" data-menu>
+            <div class="navigation__links">
+              <ul class="navigation__list list">
+                <li class="navigation__item">
+                  <a href="./index.html" class="link navigation__link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="./portfolio.html"
+                    class="link navigation__link navigation__link--current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a href="#contacts" class="link navigation__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation__contacts">
+              <ul class="list navigation__contacts">
+                <li class="navigation__item--contacts">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="link navigation__mail"
+                  >
+                    <svg class="navigation__mail--envelope">
+                      <use href="./img/sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="navigation__item--contacts">
+                  <a href="tel:+380961111111" class="link navigation__phone">
+                    <svg class="navigation__phone--smartphone">
+                      <use href="./img/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <ul class="navigation navigation__list list">
-          <li class="navigation navigation__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="navigation__link link navigation__mail"
-            >
-              <svg class="navigation__mail--envelope">
-                <use href="./img/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="navigation navigation__item">
-            <a
-              href="tel:+380961111111"
-              class="navigation__link link navigation__phone"
-            >
-              <svg class="navigation__phone--smartphone">
-                <use href="./img/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -346,5 +371,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
