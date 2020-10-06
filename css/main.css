@@ -1415,7 +1415,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -1425,6 +1425,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .hero__title {
@@ -1852,7 +1858,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .portfolio__item {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;

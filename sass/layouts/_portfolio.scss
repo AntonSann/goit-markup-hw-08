@@ -43,7 +43,7 @@
   &:last-child {
     margin-bottom: 30px;
   }
-  @include for-size(tablet) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
 
